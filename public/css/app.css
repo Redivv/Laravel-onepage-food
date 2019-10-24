@@ -16996,18 +16996,48 @@ readers do not read off random characters that represent icons */
 
 html {
   font-size: 20px;
+  font-family: "Nunito";
 }
 
 html nav {
-  height: 10vh;
   width: 100%;
   position: fixed;
-  top: -10vh;
-  background: #f0f;
+  top: -200px;
+  background: rgba(64, 224, 208, 0.6);
+}
+
+html nav .nav-item {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+html nav .nav-item .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 610px) {
+  html nav .nav-item span {
+    display: none;
+  }
+
+  html nav .nav-item .mobile {
+    display: inline;
+    font-size: 0.6rem;
+  }
+
+  html nav .nav-item .mobile div {
+    font-size: 0.45rem;
+  }
+}
+
+html nav .nav-item.active {
+  color: darkorange;
 }
 
 html header {
   height: 100vh;
-  background: gold;
+  background: #f9f9f9;
 }
 

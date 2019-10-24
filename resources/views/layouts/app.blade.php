@@ -13,7 +13,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-        <nav id="nav">
+        
+        <nav class="nav align-items-center nav-justified pt-2 pb-2" id="navigation">
             @yield('navigation')
         </nav>
 

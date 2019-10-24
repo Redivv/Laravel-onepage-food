@@ -1,16 +1,40 @@
 html{
     font-size: 20px;
+    font-family: 'Nunito';
 
     nav{
-        height: 10vh;
         width: 100%;
         position: fixed;
-        top: -10vh;
-        background: #f0f;
+        top: -200px;
+        background: $turquoise-bg-transparent;
+        .nav-item{
+            color: $text-white;
+            text-transform: uppercase;
+            @include font-size(0.8rem);
+            font-weight: bold;
+            .mobile{
+                display: none;
+            }
+            @media screen and (max-width: $break1) {
+                span{
+                    display: none;
+                }
+                .mobile{
+                    display: inline;
+                    @include font-size(0.6rem);
+                    div{
+                        @include font-size(0.45rem);
+                    }
+                }
+            }
+        }
+        .nav-item.active{
+            color: $text-orange;
+        }
     }
 
     header{
         height: 100vh;
-        background: gold;
+        background: $white-bg;
     }
 }

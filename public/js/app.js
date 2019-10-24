@@ -115,16 +115,25 @@ $(document).ready(function () {
 function main() {
   var topofDiv = $("#header").offset().top; //gets offset of header
 
+  var height = $("#header").outerHeight();
   var navPresence = false;
+
+  if ($(window).scrollTop() > topofDiv + height && !navPresence) {
+    $('#navigation').animate({
+      top: "+=200px"
+    }, 500);
+    navPresence = true;
+  }
+
   $(window).scroll(function () {
-    if ($(window).scrollTop() > topofDiv && !navPresence) {
-      $('#nav').animate({
-        top: "+=10vh"
+    if ($(window).scrollTop() > topofDiv + height && !navPresence) {
+      $('#navigation').animate({
+        top: "+=200px"
       }, 500);
       navPresence = true;
-    } else if ($(window).scrollTop() == topofDiv && navPresence) {
-      $('#nav').animate({
-        top: "-=10vh"
+    } else if ($(window).scrollTop() == topofDiv + height && navPresence) {
+      $('#navigation').animate({
+        top: "-=200px"
       }, 500);
       navPresence = true;
       navPresence = false;
