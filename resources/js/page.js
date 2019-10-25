@@ -10,22 +10,22 @@ function main() {
 
     if($(window).scrollTop() > (topofDiv+height) && !navPresence){
         $('#navigation').animate({
-           top: "+=200px" 
+           top: "+=50vh" 
         }, 500);
         navPresence = true;
      }
     
     $(window).scroll(function(){
-        if($(window).scrollTop() > (topofDiv) && !navPresence){
+        if($(window).scrollTop() > (topofDiv+height) && !navPresence){
            $('#navigation').animate({
-              top: "+=200px" 
+              top: "+=50vh" 
            }, 500);
            navPresence = true;
         }
 
         else if($(window).scrollTop() ==  (topofDiv) && navPresence){
             $('#navigation').animate({
-                top: "-=200px" 
+                top: "-=50vh" 
              }, 500);
              navPresence = true;
            navPresence = false;

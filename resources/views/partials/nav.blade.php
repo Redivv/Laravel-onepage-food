@@ -1,8 +1,8 @@
-<a class="logo nav-item nav-link active" href="#header">
+<a class="logo nav-item nav-link" href="#header">
     <span>HaHaHACCP</span>
     <div class="mobile">HaHaHACCP</div>
 </a>
-<a class="nav-item nav-link" href="#about">
+<a class="nav-item nav-link active" href="#about">
     <span>{{__('nav.about')}}</span>
     <span class="mobile">
         <i class="fas fa-users"></i>
