@@ -17077,18 +17077,6 @@ html header .container .headerNavigation {
   margin-top: 15vh;
 }
 
-html header .container .headerNavigation .headerMainItem {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-  html header .container .headerNavigation .headerMainItem {
-    font-size: 1.5rem;
-  }
-}
-
 html header .container .headerNavigation .headerMainItem a {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
   display: block;
@@ -17106,10 +17094,21 @@ html header .container .headerNavigation .headerMainItem a:hover {
   background-color: #cf7200;
 }
 
-html header .container .headerNavigation .headerMinorItems {
-  font-size: 0.8rem;
-  margin-top: 10vh;
+html header .container .headerNavigation .headerMainItem a h2 {
+  font-weight: bold;
+  margin: 0;
   text-transform: uppercase;
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  html header .container .headerNavigation .headerMainItem a h2 {
+    font-size: 1.5rem;
+  }
+}
+
+html header .container .headerNavigation .headerMinorItems {
+  margin-top: 10vh;
 }
 
 html header .container .headerNavigation .headerMinorItems a {
@@ -17127,6 +17126,12 @@ html header .container .headerNavigation .headerMinorItems a {
 
 html header .container .headerNavigation .headerMinorItems a:hover {
   background-color: #dedede;
+}
+
+html header .container .headerNavigation .headerMinorItems a h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 html main {

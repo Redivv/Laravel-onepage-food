@@ -1,24 +1,24 @@
 <div class="container text-center">
     <div class="row">
         <div class="col headerTitle">
-            Lorem Ipsum
+            <h1>Lorem Ipsum</h1>
         </div>
     </div>
     <div class="headerNavigation">
         <div class="row">
             <div class="col headerMainItem">
-                <a href="#products" class="p-3">{{__('nav.products')}}</a>
+                <a href="#products" class="p-3"><h2>{{__('nav.products')}}</h2></a>
             </div>
         </div>
         <div class="row headerMinorItems">
             <div class="col">
-                <a href="#about" class="p-3">{{__('nav.about')}}</a>
+                <a href="#about" class="p-3"><h3>{{__('nav.about')}}</h3></a>
             </div>
             <div class="col">
-                <a href="#gallery" class="p-3">{{__('nav.gallery')}}</a>
+                <a href="#gallery" class="p-3"><h3>{{__('nav.gallery')}}</h3></a>
             </div>
             <div class="col">
-                <a href="#contact" class="p-3">{{__('nav.contact')}}</a>
+                <a href="#contact" class="p-3"><h3>{{__('nav.contact')}}</h3></a>
             </div>
         </div>
     </div>
