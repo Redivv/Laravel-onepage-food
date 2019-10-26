@@ -17000,6 +17000,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 810px) {
+  html {
+    font-size: 3vw;
+  }
+}
+
 @media screen and (max-width: 610px) {
   html {
     font-size: 6vw;
@@ -17013,6 +17019,7 @@ html body {
 html nav {
   width: 100%;
   position: fixed;
+  z-index: 100;
   top: -50vh;
   background: rgba(64, 224, 208, 0.6);
 }
@@ -17047,19 +17054,20 @@ html nav .nav-item.active {
   color: brown;
 }
 
-html header {
-  height: 100vh;
+html #header {
+  min-height: 100vh;
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
 
-html header .container {
+html #header .container {
   padding-top: 10vh;
 }
 
-html header .container .headerTitle {
+html #header .container .headerTitle {
+  letter-spacing: 15px;
   font-size: calc(1.425rem + 2.1vw);
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   font-weight: bold;
@@ -17068,16 +17076,22 @@ html header .container .headerTitle {
 }
 
 @media (min-width: 1200px) {
-  html header .container .headerTitle {
+  html #header .container .headerTitle {
     font-size: 3rem;
   }
 }
 
-html header .container .headerNavigation {
+html #header .container .headerNavigation {
   margin-top: 15vh;
 }
 
-html header .container .headerNavigation .headerMainItem a {
+@media screen and (max-width: 610px) {
+  html #header .container .headerNavigation {
+    margin-top: 5vh;
+  }
+}
+
+html #header .container .headerNavigation .headerMainItem a {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
   display: block;
   color: white;
@@ -17090,11 +17104,12 @@ html header .container .headerNavigation .headerMainItem a {
   border-radius: 50%;
 }
 
-html header .container .headerNavigation .headerMainItem a:hover {
+html #header .container .headerNavigation .headerMainItem a:hover {
   background-color: #cf7200;
 }
 
-html header .container .headerNavigation .headerMainItem a h2 {
+html #header .container .headerNavigation .headerMainItem a h2 {
+  letter-spacing: 4px;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
@@ -17102,16 +17117,16 @@ html header .container .headerNavigation .headerMainItem a h2 {
 }
 
 @media (min-width: 1200px) {
-  html header .container .headerNavigation .headerMainItem a h2 {
+  html #header .container .headerNavigation .headerMainItem a h2 {
     font-size: 1.5rem;
   }
 }
 
-html header .container .headerNavigation .headerMinorItems {
+html #header .container .headerNavigation .headerMinorItems {
   margin-top: 10vh;
 }
 
-html header .container .headerNavigation .headerMinorItems a {
+html #header .container .headerNavigation .headerMinorItems a {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
   display: block;
   margin: 0 auto;
@@ -17124,18 +17139,138 @@ html header .container .headerNavigation .headerMinorItems a {
   background-color: white;
 }
 
-html header .container .headerNavigation .headerMinorItems a:hover {
+html #header .container .headerNavigation .headerMinorItems a:hover {
   background-color: #dedede;
 }
 
-html header .container .headerNavigation .headerMinorItems a h3 {
+html #header .container .headerNavigation .headerMinorItems a h3 {
+  letter-spacing: 2px;
   margin: 0;
   font-size: 0.8rem;
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 610px) {
+  html #header .container .headerNavigation .headerMinorItems a h3 {
+    font-size: 0.37rem;
+  }
+}
+
 html main {
   background-color: white;
+  position: relative;
+}
+
+html main:before {
+  box-shadow: 15px 0 15px -15px inset;
+  content: " ";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 15px;
+}
+
+html main:after {
+  box-shadow: -15px 0 15px -15px inset;
+  content: " ";
+  height: 100%;
+  left: -15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+
+html main #about header {
+  text-transform: uppercase;
+  color: brown;
+}
+
+html main #about header h2 {
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: calc(1.275rem + 0.3vw);
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  html main #about header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+html main #about header h2:before,
+html main #about header h2:after {
+  content: "";
+  position: absolute;
+  height: 25%;
+  border-bottom: 5px solid darkorange;
+  border-top: 2px solid darkorange;
+  top: 45%;
+  width: 40%;
+}
+
+@media screen and (max-width: 767px) {
+  html main #about header h2:before,
+  html main #about header h2:after {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html main #about header h2:before,
+  html main #about header h2:after {
+    width: 30%;
+  }
+}
+
+html main #about header h2:before {
+  right: 60%;
+}
+
+@media screen and (max-width: 767px) {
+  html main #about header h2:before {
+    right: 65%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html main #about header h2:before {
+    right: 70%;
+  }
+}
+
+html main #about header h2:after {
+  left: 60%;
+}
+
+@media screen and (max-width: 767px) {
+  html main #about header h2:after {
+    left: 65%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html main #about header h2:after {
+    left: 70%;
+  }
+}
+
+html main #about .aboutText {
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 610px) {
+  html main #about .aboutText {
+    font-size: 0.6rem;
+  }
+}
+
+html main #about .aboutText span.highlight {
+  font-weight: bold;
+  color: darkorange;
 }
 
 html footer {

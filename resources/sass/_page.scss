@@ -2,6 +2,9 @@ html{
     font-size: 2vw;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     scroll-behavior: smooth;
+    @media screen and (max-width: $break2) {
+        font-size: 3vw;
+    }
     @media screen and (max-width: $break1) {
         font-size: 6vw;
     }
@@ -13,6 +16,7 @@ html{
     nav{
         width: 100%;
         position: fixed;
+        z-index: 100;
         top: -50vh;
         background: $turquoise-bg-transparent;
         .nav-item{
@@ -41,8 +45,8 @@ html{
         }
     }
 
-    header{
-        height: 100vh;
+    #header{
+        min-height: 100vh;
         background-image: url('/images/background.jpg');
         background-size: cover;
         background-position: top;
@@ -50,6 +54,7 @@ html{
         .container{
             padding-top: 10vh;
             .headerTitle{
+                letter-spacing: 15px;
                 @include font-size(3rem);	
                 text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
                 font-weight: bold;
@@ -58,6 +63,9 @@ html{
             }
             .headerNavigation{
                 margin-top: 15vh;
+                @media screen and (max-width: $break1) {
+                    margin-top:5vh;
+                }
                 .headerMainItem{
                     a{
                         box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
@@ -72,6 +80,7 @@ html{
                             background-color: $text-orange-hover;
                         }
                         h2{
+                            letter-spacing: 4px;
                             font-weight: bold;
                             margin: 0;
                             text-transform: uppercase;
@@ -94,8 +103,12 @@ html{
                             background-color: $text-white-hover;
                         }
                         h3{
+                            letter-spacing: 2px;
                             margin: 0;
                             @include font-size(0.8rem);
+                            @media screen and (max-width: $break1) {
+                                @include font-size(0.37rem);
+                            }
                             text-transform: uppercase;
                         }
                     }
@@ -107,6 +120,87 @@ html{
 
     main{
         background-color: $text-white;
+        position: relative;
+        &:before{
+            box-shadow: 15px 0 15px -15px inset;
+            content: " ";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -15px;
+            width: 15px;
+        }
+
+        &:after{
+            box-shadow: -15px 0 15px -15px inset;
+            content: " ";
+            height: 100%;
+            left: -15px;
+            position: absolute;
+            top: 0;
+            width: 15px;
+        }
+
+        #about{
+            header{
+                text-transform: uppercase;
+                color: $text-brown;
+                h2{
+                    letter-spacing: 4px;
+                    font-weight: bold;
+                    @include font-size(1.5rem);
+                    position:relative;
+
+                    &:before,&:after{
+                        content: "";
+                        position: absolute;
+                        height: 25%;
+                        border-bottom: 5px solid $text-orange;
+                        border-top: 2px solid $text-orange;
+                        top: 45%;
+                        width: 40%;
+                        @media screen and (max-width: $break3){
+                            width: 35%;
+                        }  
+                        @media screen and (max-width: $break1){
+                            width: 30%;
+                        }
+                    }
+
+                    &:before{
+                        right: 60%;
+                        @media screen and (max-width: $break3){
+                            right: 65%;
+                        }  
+                        @media screen and (max-width: $break1){
+                            right: 70%;
+                        }
+                    }
+
+                    &:after{ 
+                        left: 60%;                       
+                        @media screen and (max-width: $break3){
+                            left: 65%;
+                        }  
+                        @media screen and (max-width: $break1){
+                            left: 70%;
+                        }
+                    }
+                }
+            }
+            .aboutText{
+                text-align: justify;
+                letter-spacing: 2px;
+                @include font-size(0.8rem);
+                @media screen and (max-width: $break1){
+                    @include font-size(0.6rem);
+                }
+                span.highlight{
+                    font-weight: bold;
+                    color:$text-orange;
+                }
+            }
+        }
     }
 
     footer{
