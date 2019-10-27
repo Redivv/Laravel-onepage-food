@@ -17013,7 +17013,7 @@ html {
 }
 
 html body {
-  background-color: rgba(64, 224, 208, 0.6);
+  background-color: rgba(64, 224, 208, 0.35);
 }
 
 html nav {
@@ -17027,8 +17027,9 @@ html nav {
 html nav .nav-item {
   color: white;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: bold;
+  padding: 0.2rem 0.2rem;
 }
 
 html nav .nav-item .mobile {
@@ -17181,12 +17182,14 @@ html main:after {
   width: 15px;
 }
 
-html main #about header {
+html main article header,
+html main section header {
   text-transform: uppercase;
   color: brown;
 }
 
-html main #about header h2 {
+html main article header h2,
+html main section header h2 {
   letter-spacing: 4px;
   font-weight: bold;
   font-size: calc(1.275rem + 0.3vw);
@@ -17194,83 +17197,114 @@ html main #about header h2 {
 }
 
 @media (min-width: 1200px) {
-  html main #about header h2 {
+  html main article header h2,
+  html main section header h2 {
     font-size: 1.5rem;
   }
 }
 
-html main #about header h2:before,
-html main #about header h2:after {
+html main article header h2:before,
+html main article header h2:after,
+html main section header h2:before,
+html main section header h2:after {
   content: "";
   position: absolute;
   height: 25%;
   border-bottom: 5px solid darkorange;
   border-top: 2px solid darkorange;
   top: 45%;
-  width: 40%;
+  width: 37%;
 }
 
 @media screen and (max-width: 767px) {
-  html main #about header h2:before,
-  html main #about header h2:after {
-    width: 35%;
+  html main article header h2:before,
+  html main article header h2:after,
+  html main section header h2:before,
+  html main section header h2:after {
+    width: 32%;
   }
 }
 
 @media screen and (max-width: 610px) {
-  html main #about header h2:before,
-  html main #about header h2:after {
-    width: 30%;
+  html main article header h2:before,
+  html main article header h2:after,
+  html main section header h2:before,
+  html main section header h2:after {
+    width: 25%;
   }
 }
 
-html main #about header h2:before {
-  right: 60%;
+html main article header h2:before,
+html main section header h2:before {
+  right: 63%;
 }
 
 @media screen and (max-width: 767px) {
-  html main #about header h2:before {
-    right: 65%;
+  html main article header h2:before,
+  html main section header h2:before {
+    right: 68%;
   }
 }
 
 @media screen and (max-width: 610px) {
-  html main #about header h2:before {
-    right: 70%;
+  html main article header h2:before,
+  html main section header h2:before {
+    right: 77%;
   }
 }
 
-html main #about header h2:after {
-  left: 60%;
+html main article header h2:after,
+html main section header h2:after {
+  left: 63%;
 }
 
 @media screen and (max-width: 767px) {
-  html main #about header h2:after {
-    left: 65%;
+  html main article header h2:after,
+  html main section header h2:after {
+    left: 68%;
   }
 }
 
 @media screen and (max-width: 610px) {
-  html main #about header h2:after {
-    left: 70%;
+  html main article header h2:after,
+  html main section header h2:after {
+    left: 77%;
   }
 }
 
-html main #about .aboutText {
+html main article .aboutText,
+html main section .aboutText {
   text-align: justify;
   letter-spacing: 2px;
   font-size: 0.8rem;
 }
 
 @media screen and (max-width: 610px) {
-  html main #about .aboutText {
+  html main article .aboutText,
+  html main section .aboutText {
     font-size: 0.6rem;
   }
 }
 
-html main #about .aboutText span.highlight {
+html main article .aboutText span.highlight,
+html main section .aboutText span.highlight {
   font-weight: bold;
   color: darkorange;
+}
+
+html main article .cardBox,
+html main section .cardBox {
+  font-size: 0.5rem;
+  padding: 0 2%;
+}
+
+@media screen and (max-width: 610px) {
+  html main article .cardBox .card-deck .card,
+  html main section .cardBox .card-deck .card {
+    -webkit-box-flex: unset;
+            flex: unset;
+    margin-bottom: 15px;
+  }
 }
 
 html footer {

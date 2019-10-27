@@ -10,7 +10,7 @@ html{
     }
 
     body{
-        background-color: $turquoise-bg-transparent;
+        background-color: $turquoise-body-transparent;
     }
 
     nav{
@@ -22,8 +22,9 @@ html{
         .nav-item{
             color: $text-white;
             text-transform: uppercase;
-            @include font-size(0.8rem);
+            @include font-size(0.6rem);
             font-weight: bold;
+            padding: 0.2rem 0.2rem;
             .mobile{
                 display: none;
             }
@@ -141,7 +142,7 @@ html{
             width: 15px;
         }
 
-        #about{
+        article,section{
             header{
                 text-transform: uppercase;
                 color: $text-brown;
@@ -158,32 +159,32 @@ html{
                         border-bottom: 5px solid $text-orange;
                         border-top: 2px solid $text-orange;
                         top: 45%;
-                        width: 40%;
+                        width: 37%;
                         @media screen and (max-width: $break3){
-                            width: 35%;
+                            width: 32%;
                         }  
                         @media screen and (max-width: $break1){
-                            width: 30%;
+                            width: 25%;
                         }
                     }
 
                     &:before{
-                        right: 60%;
+                        right: 63%;
                         @media screen and (max-width: $break3){
-                            right: 65%;
+                            right: 68%;
                         }  
                         @media screen and (max-width: $break1){
-                            right: 70%;
+                            right: 77%;
                         }
                     }
 
                     &:after{ 
-                        left: 60%;                       
+                        left: 63%;                       
                         @media screen and (max-width: $break3){
-                            left: 65%;
+                            left: 68%;
                         }  
                         @media screen and (max-width: $break1){
-                            left: 70%;
+                            left: 77%;
                         }
                     }
                 }
@@ -200,7 +201,18 @@ html{
                     color:$text-orange;
                 }
             }
+            .cardBox{
+                @include font-size(0.5rem);
+                padding: 0 2%;
+                @media screen and (max-width: $break1){
+                    .card-deck .card{
+                        flex: unset;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
         }
+
     }
 
     footer{

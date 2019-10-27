@@ -23,7 +23,7 @@ function main() {
            navPresence = true;
         }
 
-        else if($(window).scrollTop() ==  (topofDiv+height) && navPresence){
+        else if($(window).scrollTop() <=  (topofDiv+height) && navPresence){
             $('#navigation').animate({
                 top: "-=50vh" 
              }, 500);

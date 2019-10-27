@@ -1,6 +1,6 @@
 <a class="logo nav-item nav-link" href="#header">
-    <span>HaHaHACCP</span>
-    <div class="mobile">HaHaHACCP</div>
+    <span>Logo</span>
+    <div class="mobile">Logo</div>
 </a>
 <a class="nav-item nav-link active" href="#about">
     <span>{{__('nav.about')}}</span>

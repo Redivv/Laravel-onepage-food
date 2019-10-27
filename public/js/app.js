@@ -132,7 +132,7 @@ function main() {
         top: "+=50vh"
       }, 500);
       navPresence = true;
-    } else if ($(window).scrollTop() == topofDiv + height && navPresence) {
+    } else if ($(window).scrollTop() <= topofDiv + height && navPresence) {
       $('#navigation').animate({
         top: "-=50vh"
       }, 500);
