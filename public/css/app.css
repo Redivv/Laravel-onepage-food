@@ -17064,21 +17064,32 @@ html #header {
 }
 
 html #header .container {
-  padding-top: 10vh;
+  padding-top: 3vh;
 }
 
-html #header .container .headerTitle {
-  letter-spacing: 15px;
-  font-size: calc(1.425rem + 2.1vw);
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  font-weight: bold;
+html #header .container .headerTitle h1 {
+  letter-spacing: 10px;
+  font-size: calc(1.375rem + 1.5vw);
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
   font-family: "Lobster", cursive;
   color: brown;
 }
 
 @media (min-width: 1200px) {
-  html #header .container .headerTitle {
-    font-size: 3rem;
+  html #header .container .headerTitle h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html #header .container .headerTitle h1 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+
+@media screen and (max-width: 610px) and (min-width: 1200px) {
+  html #header .container .headerTitle h1 {
+    font-size: 1.5rem;
   }
 }
 
@@ -17297,6 +17308,7 @@ html main section .cardBox {
   font-size: 0.5rem;
   padding: 1% 1%;
   background-color: rgba(192, 192, 192, 0.4);
+  box-shadow: inset 0 0 10px 0 rgba(128, 128, 128, 0.8);
 }
 
 @media screen and (max-width: 610px) {

@@ -53,14 +53,18 @@ html{
         background-position: top;
         background-repeat: no-repeat;
         .container{
-            padding-top: 10vh;
+            padding-top: 3vh;
             .headerTitle{
-                letter-spacing: 15px;
-                @include font-size(3rem);	
-                text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-                font-weight: bold;
-                font-family: 'Lobster', cursive;
-                color: $text-brown;
+                h1{
+                    letter-spacing: 10px;
+                    @include font-size(2.5rem);
+                    @media screen and (max-width: $break1) {
+                        @include font-size(1.5rem);   
+                    }
+                    text-shadow: 5px 5px 3px rgba(0,0,0,0.3);
+                    font-family: 'Lobster', cursive;
+                    color: $text-brown;
+                }
             }
             .headerNavigation{
                 margin-top: 15vh;
@@ -205,6 +209,8 @@ html{
                 @include font-size(0.5rem);
                 padding: 1% 1%;
                 background-color: rgba(192,192,192,0.4);
+                -webkit-box-shadow:inset 0 0 10px 0 rgba(128,128,128,0.8);
+                box-shadow:inset 0 0 10px 0 rgba(128,128,128,0.8);
                 @media screen and (max-width: $break1){
                     .card-deck .card{
                         flex: unset;

@@ -1,7 +1,7 @@
 <div class="container text-center">
     <div class="row">
         <div class="col headerTitle">
-            <h1>Lorem Ipsum</h1>
+            <h1>{{__('header.catchPhrase')}}</h1>
         </div>
     </div>
     <div class="headerNavigation">
