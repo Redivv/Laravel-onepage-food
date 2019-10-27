@@ -17295,7 +17295,8 @@ html main section .aboutText span.highlight {
 html main article .cardBox,
 html main section .cardBox {
   font-size: 0.5rem;
-  padding: 0 2%;
+  padding: 1% 1%;
+  background-color: rgba(192, 192, 192, 0.4);
 }
 
 @media screen and (max-width: 610px) {

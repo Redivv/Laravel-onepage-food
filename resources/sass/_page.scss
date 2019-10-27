@@ -203,7 +203,8 @@ html{
             }
             .cardBox{
                 @include font-size(0.5rem);
-                padding: 0 2%;
+                padding: 1% 1%;
+                background-color: rgba(192,192,192,0.4);
                 @media screen and (max-width: $break1){
                     .card-deck .card{
                         flex: unset;
