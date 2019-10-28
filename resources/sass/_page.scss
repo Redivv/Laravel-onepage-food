@@ -12,6 +12,7 @@ html{
     body{
         background-color: $turquoise-body-transparent;
         position: relative;
+        overflow-x: hidden;
     }
 
     nav{
