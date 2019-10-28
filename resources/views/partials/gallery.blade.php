@@ -2,7 +2,7 @@
     <h2>{{__('gallery.title')}}</h2>
 </header>
 
-<div class="cardBox card">
+<div class="mt-3 cardBox card">
     <div class="card-deck">
         <div class="card">
             <img src="{{asset('images/image-cap.png')}}" class="card-img-top" alt="...">
