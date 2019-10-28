@@ -31,6 +31,23 @@ function main() {
            navPresence = false;
         }
     });
+
+    $('.productsIco').on('click',function(){
+        if ($(this).hasClass('active')){
+            $(this).removeClass('active');
+        }else{
+            $(this).addClass('active');
+        }
+    })
+
+    $('.productsAllBtn').on('click',function(){
+        $('.productsIco').addClass('active');
+    })
+
+    $('.productsResetBtn').on('click',function(){
+        $('.productsIco').removeClass('active');
+    })
+    
 }
 
 function smoothScroll() {

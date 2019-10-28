@@ -17201,7 +17201,7 @@ html main section header {
 
 html main article header h2,
 html main section header h2 {
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: bold;
   font-size: calc(1.275rem + 0.3vw);
   position: relative;
@@ -17224,7 +17224,7 @@ html main section header h2:after {
   border-bottom: 5px solid darkorange;
   border-top: 2px solid darkorange;
   top: 45%;
-  width: 37%;
+  width: 32%;
 }
 
 @media screen and (max-width: 767px) {
@@ -17232,7 +17232,7 @@ html main section header h2:after {
   html main article header h2:after,
   html main section header h2:before,
   html main section header h2:after {
-    width: 32%;
+    width: 29%;
   }
 }
 
@@ -17241,45 +17241,31 @@ html main section header h2:after {
   html main article header h2:after,
   html main section header h2:before,
   html main section header h2:after {
-    width: 25%;
+    width: 0%;
   }
 }
 
 html main article header h2:before,
 html main section header h2:before {
-  right: 63%;
+  right: 68%;
 }
 
 @media screen and (max-width: 767px) {
   html main article header h2:before,
   html main section header h2:before {
-    right: 68%;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  html main article header h2:before,
-  html main section header h2:before {
-    right: 77%;
+    right: 75%;
   }
 }
 
 html main article header h2:after,
 html main section header h2:after {
-  left: 63%;
+  left: 68%;
 }
 
 @media screen and (max-width: 767px) {
   html main article header h2:after,
   html main section header h2:after {
-    left: 68%;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  html main article header h2:after,
-  html main section header h2:after {
-    left: 77%;
+    left: 75%;
   }
 }
 
@@ -17317,6 +17303,146 @@ html main section .cardBox {
     -webkit-box-flex: unset;
             flex: unset;
     margin-bottom: 15px;
+  }
+}
+
+html main article .productsSubTitle,
+html main section .productsSubTitle {
+  text-align: justify;
+}
+
+html main article .productsSubTitle h3,
+html main section .productsSubTitle h3 {
+  font-size: 0.8rem;
+}
+
+html main article #productsForm .product .productsIco,
+html main section #productsForm .product .productsIco {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  html main article #productsForm .product .productsIco,
+  html main section #productsForm .product .productsIco {
+    font-size: 1.5rem;
+  }
+}
+
+html main article #productsForm .product .productsIco i,
+html main section #productsForm .product .productsIco i {
+  cursor: pointer;
+  padding: 10% 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 35%;
+}
+
+@media screen and (max-width: 610px) {
+  html main article #productsForm .product .productsIco i,
+  html main section #productsForm .product .productsIco i {
+    width: 50%;
+  }
+}
+
+html main article #productsForm .product .productsIco.active i,
+html main section #productsForm .product .productsIco.active i {
+  background-color: darkorange;
+  color: white;
+  border: 1px solid darkorange;
+}
+
+html main article #productsForm .product .productsDesc,
+html main section #productsForm .product .productsDesc {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+html main article #productsForm .product .productsBtn button,
+html main section #productsForm .product .productsBtn button {
+  letter-spacing: 2px;
+  font-size: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: darkorange;
+}
+
+html main article #productsForm .productsMainItem .productsIco,
+html main section #productsForm .productsMainItem .productsIco {
+  cursor: pointer;
+  font-size: calc(1.325rem + 0.9vw);
+  background-color: darkorange;
+  color: white;
+  padding: 1.5% 0;
+}
+
+@media (min-width: 1200px) {
+  html main article #productsForm .productsMainItem .productsIco,
+  html main section #productsForm .productsMainItem .productsIco {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html main article #productsForm .productsMainItem .productsIco,
+  html main section #productsForm .productsMainItem .productsIco {
+    padding: 1% 0;
+  }
+}
+
+html main article #productsForm .productsMainItem .productsIco .productsDesc,
+html main section #productsForm .productsMainItem .productsIco .productsDesc {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 610px) {
+  html main article #productsForm .productsMainItem .productsIco .productsDesc,
+  html main section #productsForm .productsMainItem .productsIco .productsDesc {
+    font-size: 0.65rem;
+  }
+}
+
+html main article #productsForm .productsMainItem .productsIco.active,
+html main section #productsForm .productsMainItem .productsIco.active {
+  background-color: brown;
+}
+
+html main article #productsForm .productsMainItem .productsBtn button,
+html main section #productsForm .productsMainItem .productsBtn button {
+  letter-spacing: 1px;
+  font-size: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: darkorange;
+}
+
+html main article #productsForm .productsAllBtn,
+html main article #productsForm .productsResetBtn,
+html main section #productsForm .productsAllBtn,
+html main section #productsForm .productsResetBtn {
+  background-color: darkorange;
+  color: white;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+html main article #productsForm .productsAllBtn:hover,
+html main article #productsForm .productsResetBtn:hover,
+html main section #productsForm .productsAllBtn:hover,
+html main section #productsForm .productsResetBtn:hover {
+  background-color: #cf7200;
+}
+
+@media screen and (max-width: 767px) {
+  html main article #productsForm .productsAllBtn,
+  html main section #productsForm .productsAllBtn {
+    margin-right: 2%;
   }
 }
 

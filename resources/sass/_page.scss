@@ -151,7 +151,7 @@ html{
                 text-transform: uppercase;
                 color: $text-brown;
                 h2{
-                    letter-spacing: 4px;
+                    letter-spacing: 2px;
                     font-weight: bold;
                     @include font-size(1.5rem);
                     position:relative;
@@ -163,33 +163,27 @@ html{
                         border-bottom: 5px solid $text-orange;
                         border-top: 2px solid $text-orange;
                         top: 45%;
-                        width: 37%;
+                        width: 32%;
                         @media screen and (max-width: $break3){
-                            width: 32%;
+                            width: 29%;
                         }  
                         @media screen and (max-width: $break1){
-                            width: 25%;
+                            width: 0%;
                         }
                     }
 
                     &:before{
-                        right: 63%;
+                        right: 68%;
                         @media screen and (max-width: $break3){
-                            right: 68%;
-                        }  
-                        @media screen and (max-width: $break1){
-                            right: 77%;
-                        }
+                            right: 75%;
+                        } 
                     }
 
                     &:after{ 
-                        left: 63%;                       
+                        left: 68%;                       
                         @media screen and (max-width: $break3){
-                            left: 68%;
+                            left: 75%;
                         }  
-                        @media screen and (max-width: $break1){
-                            left: 77%;
-                        }
                     }
                 }
             }
@@ -217,6 +211,108 @@ html{
                         margin-bottom: 15px;
                     }
                 }
+            }
+
+            .productsSubTitle{
+                text-align: justify;
+                h3{
+                    @include font-size (0.8rem);
+                }
+            }
+
+            #productsForm{
+                .product{
+                    .productsIco{
+                        @include font-size(1.5rem);
+                        i{
+                            cursor: pointer;
+                            padding: 10% 0;
+                            border: 1px solid black;
+                            border-radius:50%;
+                            width: 35%;
+                            @media screen and (max-width: $break1){
+                                width:50%;
+                            }
+                        }
+
+                        &.active{
+                            i{
+                                background-color: $text-orange;
+                                color: $text-white;
+                                border:1px solid $text-orange;
+                            }
+                        }
+                    }
+                    .productsDesc{
+                        @include font-size(0.6rem);
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    .productsBtn{
+                        button{
+                            letter-spacing: 2px;
+                            @include font-size(0.5rem);
+                            padding: 0.2rem 0.4rem;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: $text-white;
+                            background-color: $text-orange;
+                        }
+                    }
+                }
+                .productsMainItem{
+                    .productsIco{
+                        cursor: pointer;
+                        @include font-size(2rem);
+                        background-color: $text-orange;
+                        color: $text-white;
+                        padding: 1.5% 0;
+                        @media screen and (max-width: $break1){
+                            padding: 1% 0;
+                        }
+
+                        .productsDesc{
+                            @include font-size(1rem);
+                            @media screen and (max-width: $break1){
+                                @include font-size(0.65rem);
+                            }
+                            text-transform: uppercase;
+                            font-weight: bold;
+                        }
+
+                        &.active{
+                            background-color: $text-brown;
+                        }
+                    }
+                    .productsBtn{
+                        button{
+                            letter-spacing: 1px;
+                            @include font-size(0.5rem);
+                            padding: 0.2rem 0.4rem;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: $text-white;
+                            background-color: $text-orange;
+                        }
+                    }
+                }
+                .productsAllBtn, .productsResetBtn{
+                    background-color: $text-orange;
+                    color: $text-white;
+                    @include font-size(0.5rem);
+                    font-weight: bold;
+
+                    &:hover{
+                        background-color: $text-orange-hover;
+                    }
+                }
+
+                @media screen and (max-width: $break3){
+                    .productsAllBtn{
+                        margin-right: 2%;
+                    }
+                }
+                
             }
         }
 

@@ -1,5 +1,5 @@
 <header class="text-center">
-    <h2>Galeria</h2>
+    <h2>{{__('gallery.title')}}</h2>
 </header>
 
 <div class="cardBox card">
@@ -11,7 +11,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, eos totam! Inventore qui debitis harum aliquid tenetur rerum nesciunt eos? Placeat nesciunt architecto cum optio enim recusandae? Sequi, molestias dolor!</p>
             </div>
             <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <small class="text-muted">Last updated 5 mins ago</small>
             </div>
         </div>
         <div class="card">
@@ -21,7 +21,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt magni accusamus ab quam commodi quis illo corporis aliquid?</p>
             </div>
             <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <small class="text-muted">Last updated 3 hours ago</small>
             </div>
         </div>
         <div class="card">
@@ -31,7 +31,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure iusto cum voluptatem nisi at odit soluta in, quo eaque inventore vero molestias suscipit ducimus blanditiis dignissimos impedit quos commodi?</p>
             </div>
             <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <small class="text-muted">Last updated 2 days ago</small>
             </div>
         </div>
     </div>

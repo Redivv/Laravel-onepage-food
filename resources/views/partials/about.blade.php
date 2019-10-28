@@ -1,5 +1,5 @@
 <header class="text-center">
-    <h2>O Nas</h2>
+    <h2>{{__('about.title')}}</h2>
 </header>
 <div class="container aboutText">
     <p>

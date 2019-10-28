@@ -23,19 +23,19 @@
         </header>
         <main class="container">
             
-            <article id="about" class="pt-3">
+            <article id="about" class="pt-3 mb-4">
                 @yield('aboutMe')
             </article>
 
-            <section id="gallery">
+            <section id="gallery" class="mb-4">
                 @yield('instaGallery')
             </section>
 
-            <article id="products">
+            <article id="products" class="mb-4">
                 @yield('products')
             </article>
 
-            <section id="contact">
+            <section id="contact" class="mb-3">
                 @yield('contactMe')
             </section>
         </main>
