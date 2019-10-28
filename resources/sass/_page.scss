@@ -190,9 +190,9 @@ html{
             .aboutText{
                 text-align: justify;
                 letter-spacing: 2px;
-                @include font-size(0.8rem);
+                @include font-size(0.7rem);
                 @media screen and (max-width: $break1){
-                    @include font-size(0.6rem);
+                    @include font-size(0.5rem);
                 }
                 span.highlight{
                     font-weight: bold;
@@ -301,18 +301,85 @@ html{
                     color: $text-white;
                     @include font-size(0.5rem);
                     font-weight: bold;
+                    @media screen and (max-width: $break3){
+                        margin: auto;
+                        width: 40%;
+                    }
 
                     &:hover{
                         background-color: $text-orange-hover;
                     }
                 }
+                
+            }
 
-                @media screen and (max-width: $break3){
-                    .productsAllBtn{
-                        margin-right: 2%;
+            .contactOutputBox, .contactFormBox{
+                header{
+                    h3{
+                        @include font-size(0.6rem);
+                        font-weight: bold;
+                        color: black;
+                        letter-spacing: 2px;
                     }
                 }
+            }
+
+            .contactOutputBox{
+                border-right: 1px solid #dee2e6;
+                padding: 2% 5%;
+                @media screen and (max-width: $break3){
+                    border-right: 0;
+                    border-bottom: 1px solid #dee2e6;
+                    padding-bottom:2%;
+                }
+
+                .contactSelectedItem{
+                    margin-right: 5%;
+                    margin-top: 5%;
+                    background-color: $text-orange;
+                    color: $text-white;
+                    padding: 2.5%;
+                    @include font-size(0.8rem);
+                    .contactSelectedItemDesc{
+                        width: 100%;
+                        @include font-size(0.5rem);
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+            }
                 
+            .contactFormBox{
+                @media screen and (max-width: $break3){
+                    margin-top: 5%;
+                }
+                form{
+                    .form-group{
+                        margin-bottom: 0;
+
+                        label{
+                            @include font-size (0.6rem);
+                            margin-bottom: 0.1rem;
+                        }
+
+                        input{
+                            @include font-size (0.5rem);
+                        }
+
+                        .contactBtn{
+                            background-color: $text-orange;
+                            color: $text-white;
+                            @include font-size (0.5rem);
+                            padding: 2%;
+                            text-transform: uppercase;
+                            letter-spacing: 1.5px;
+                            font-weight: bold;
+                            &:hover{
+                                background-color: $text-orange-hover;
+                            }
+                        }
+                    }
+                }
             }
         }
 

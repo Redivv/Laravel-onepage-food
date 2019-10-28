@@ -33,19 +33,81 @@ function main() {
     });
 
     $('.productsIco').on('click',function(){
+        let selectedIcon;
+        let selectedItem;
+
+
+        if ($(this).hasClass('productsMainItemImage')) {
+            selectedIcon = '<i class="fas fa-book"></i>';
+            selectedItem = $(this).text().trim();
+        }
+        else{
+            selectedIcon = $(this).html().trim();
+            selectedItem = $(this).next().html().trim();
+        }
+
+        let selectedItem_class = selectedItem.replace(/\s+/g, '-').toLowerCase();
+
         if ($(this).hasClass('active')){
+
             $(this).removeClass('active');
+            $('.'+selectedItem_class).remove();
+
         }else{
+
             $(this).addClass('active');
+            let html = '<div class="'+selectedItem_class+' col-md-3 contactSelectedItem selectedItem">'+
+            selectedIcon+
+            '<div class="contactSelectedItemDesc">'+
+                selectedItem+
+            '</div>'+
+            '</div>';
+
+            $('.contactSelectedItems').append(html);
+
+            html = '<input class="selectedItem '+selectedItem_class+'" type="hidden" value="'+selectedItem+'" name="selectedItems[]">';
+
+            $('#contactForm').append(html);
         }
     })
 
     $('.productsAllBtn').on('click',function(){
+        $('.productsIco').removeClass('active');
+        $('.selectedItem').remove();
         $('.productsIco').addClass('active');
+
+        var html = '';
+        var html2 = '';
+
+        $('div.productsIco').each(function () {
+
+            if ($(this).hasClass('productsMainItemImage')) {
+                selectedIcon = '<i class="fas fa-book"></i>';
+                selectedItem = $(this).text().trim();
+            }
+            else{
+                selectedIcon = $(this).html().trim();
+                selectedItem = $(this).next().html().trim();
+            }
+            let selectedItem_class = selectedItem.replace(/\s+/g, '-').toLowerCase();
+
+            html += '<div class="'+selectedItem_class+' col-md-3 contactSelectedItem selectedItem">'+
+            selectedIcon+
+            '<div class="contactSelectedItemDesc">'+
+                selectedItem+
+            '</div>'+
+            '</div>';
+
+            html2 += '<input class="selectedItem '+selectedItem_class+'" type="hidden" value="'+selectedItem+'" name="selectedItems[]">';
+        });
+
+        $('.contactSelectedItems').append(html);
+        $('#contactForm').append(html2);
     })
 
     $('.productsResetBtn').on('click',function(){
         $('.productsIco').removeClass('active');
+        $('.selectedItem').remove();
     })
     
 }

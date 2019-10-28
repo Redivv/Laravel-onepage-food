@@ -17273,13 +17273,13 @@ html main article .aboutText,
 html main section .aboutText {
   text-align: justify;
   letter-spacing: 2px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 @media screen and (max-width: 610px) {
   html main article .aboutText,
   html main section .aboutText {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -17432,6 +17432,16 @@ html main section #productsForm .productsResetBtn {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  html main article #productsForm .productsAllBtn,
+  html main article #productsForm .productsResetBtn,
+  html main section #productsForm .productsAllBtn,
+  html main section #productsForm .productsResetBtn {
+    margin: auto;
+    width: 40%;
+  }
+}
+
 html main article #productsForm .productsAllBtn:hover,
 html main article #productsForm .productsResetBtn:hover,
 html main section #productsForm .productsAllBtn:hover,
@@ -17439,11 +17449,86 @@ html main section #productsForm .productsResetBtn:hover {
   background-color: #cf7200;
 }
 
+html main article .contactOutputBox header h3,
+html main article .contactFormBox header h3,
+html main section .contactOutputBox header h3,
+html main section .contactFormBox header h3 {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+}
+
+html main article .contactOutputBox,
+html main section .contactOutputBox {
+  border-right: 1px solid #dee2e6;
+  padding: 2% 5%;
+}
+
 @media screen and (max-width: 767px) {
-  html main article #productsForm .productsAllBtn,
-  html main section #productsForm .productsAllBtn {
-    margin-right: 2%;
+  html main article .contactOutputBox,
+  html main section .contactOutputBox {
+    border-right: 0;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 2%;
   }
+}
+
+html main article .contactOutputBox .contactSelectedItem,
+html main section .contactOutputBox .contactSelectedItem {
+  margin-right: 5%;
+  margin-top: 5%;
+  background-color: darkorange;
+  color: white;
+  padding: 2.5%;
+  font-size: 0.8rem;
+}
+
+html main article .contactOutputBox .contactSelectedItem .contactSelectedItemDesc,
+html main section .contactOutputBox .contactSelectedItem .contactSelectedItemDesc {
+  width: 100%;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  html main article .contactFormBox,
+  html main section .contactFormBox {
+    margin-top: 5%;
+  }
+}
+
+html main article .contactFormBox form .form-group,
+html main section .contactFormBox form .form-group {
+  margin-bottom: 0;
+}
+
+html main article .contactFormBox form .form-group label,
+html main section .contactFormBox form .form-group label {
+  font-size: 0.6rem;
+  margin-bottom: 0.1rem;
+}
+
+html main article .contactFormBox form .form-group input,
+html main section .contactFormBox form .form-group input {
+  font-size: 0.5rem;
+}
+
+html main article .contactFormBox form .form-group .contactBtn,
+html main section .contactFormBox form .form-group .contactBtn {
+  background-color: darkorange;
+  color: white;
+  font-size: 0.5rem;
+  padding: 2%;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+html main article .contactFormBox form .form-group .contactBtn:hover,
+html main section .contactFormBox form .form-group .contactBtn:hover {
+  background-color: #cf7200;
 }
 
 html footer {

@@ -62,7 +62,7 @@
         </div>
 
         <div class="col productsMainItem form-group">
-            <div class="productsIco">
+            <div class="productsMainItemImage productsIco">
                 <i class="fas fa-book"></i>
                 <div class="productsDesc">
                     HCCP
@@ -106,9 +106,9 @@
                 <i class="fas fa-sticky-note"></i>
             </div>
             <div class="productsDesc">
-                Etykiety<br>
-                Alergeny<br>
-                Wartość Odżywcza<br>
+                Etykiety
+                Alergeny
+                Wartość Odżywcza
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>
@@ -120,9 +120,9 @@
                 <i class="fas fa-ad"></i>
             </div>
             <div class="productsDesc">
-                Strona WWW<br>
-                Grafika<br>
-                Reklama<br>
+                Strona WWW
+                Grafika
+                Reklama
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>
@@ -131,7 +131,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row text-center">
         <button class="productsAllBtn btn offset-sm-1 offset-md-4 mr-md-2 col-xs-6 col-sm-5 col-md-2" type="button">
             Zaznacz Wszystko
         </button>
