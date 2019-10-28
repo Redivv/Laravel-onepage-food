@@ -12,7 +12,7 @@
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navigation">
         
         <nav class="nav align-items-center nav-justified pt-2 pb-2" id="navigation">
             @yield('navigation')
@@ -21,17 +21,17 @@
         <header id="header">
             @yield('header')
         </header>
-        <main class="container">
+        <main class="container pb-4">
             
-            <article id="about" class="pt-3 mb-4">
+            <article id="about" class="pt-4 mb-5">
                 @yield('aboutMe')
             </article>
 
-            <section id="gallery" class="mb-4">
+            <section id="gallery" class="mb-5">
                 @yield('instaGallery')
             </section>
 
-            <article id="products" class="mb-4">
+            <article id="products" class="mb-5">
                 @yield('products')
             </article>
 
@@ -40,8 +40,8 @@
             </section>
         </main>
 
-        <footer>
-            <section id="footer">
+        <footer class="pt-1 pb-1">
+            <section class="text-center" id="footer">
                 @yield('footer')
             </section>
         </footer>

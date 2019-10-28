@@ -11,6 +11,7 @@ html{
 
     body{
         background-color: $turquoise-body-transparent;
+        position: relative;
     }
 
     nav{
@@ -25,6 +26,9 @@ html{
             @include font-size(0.6rem);
             font-weight: bold;
             padding: 0.2rem 0.2rem;
+            img{
+                width: 20%;
+            }
             .mobile{
                 display: none;
             }
@@ -33,6 +37,9 @@ html{
                     display: none;
                 }
                 .mobile{
+                    img{
+                        width:60%;
+                    }
                     display: inline;
                     @include font-size(0.6rem);
                     div{
@@ -386,6 +393,8 @@ html{
     }
 
     footer{
-        background-color: $text-white;
+        background-color: $text-brown;
+        color: $text-white;
+        @include font-size(0.5rem);
     }
 }

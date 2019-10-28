@@ -17014,6 +17014,7 @@ html {
 
 html body {
   background-color: rgba(64, 224, 208, 0.35);
+  position: relative;
 }
 
 html nav {
@@ -17032,6 +17033,10 @@ html nav .nav-item {
   padding: 0.2rem 0.2rem;
 }
 
+html nav .nav-item img {
+  width: 20%;
+}
+
 html nav .nav-item .mobile {
   display: none;
 }
@@ -17044,6 +17049,10 @@ html nav .nav-item .mobile {
   html nav .nav-item .mobile {
     display: inline;
     font-size: 0.6rem;
+  }
+
+  html nav .nav-item .mobile img {
+    width: 60%;
   }
 
   html nav .nav-item .mobile div {
@@ -17532,6 +17541,8 @@ html main section .contactFormBox form .form-group .contactBtn:hover {
 }
 
 html footer {
-  background-color: white;
+  background-color: brown;
+  color: white;
+  font-size: 0.5rem;
 }
 

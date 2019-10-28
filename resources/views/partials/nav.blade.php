@@ -1,6 +1,6 @@
 <a class="logo nav-item nav-link" href="#header">
-    <span>Logo</span>
-    <div class="mobile">Logo</div>
+    <span><img src="{{asset('images/image-cap.png')}}" alt="Logo"></span>
+    <div class="mobile"><img src="{{asset('images/image-cap.png')}}" alt="Logo"></div>
 </a>
 <a class="nav-item nav-link active" href="#about">
     <span>{{__('nav.about')}}</span>

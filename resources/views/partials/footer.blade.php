@@ -1,1 +1,1 @@
-Stopka
+Copyright &copy; Jakub Rajca
