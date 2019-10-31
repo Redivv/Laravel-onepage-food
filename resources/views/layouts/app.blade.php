@@ -21,7 +21,7 @@
         <header id="header">
             @yield('header')
         </header>
-        <main class="container pb-4">
+        <main class="container-fluid pb-4">
             
             <article id="about" class="pt-4 mb-5">
                 @yield('aboutMe')
