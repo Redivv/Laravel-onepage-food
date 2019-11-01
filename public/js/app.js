@@ -17878,7 +17878,7 @@ function main() {
       $('.' + selectedItem_class).remove();
     } else {
       $(this).addClass('active');
-      var html = '<div class="' + selectedItem_class + ' col-md-3 contactSelectedItem selectedItem">' + selectedIcon + '<div class="contactSelectedItemDesc">' + selectedItem + '</div>' + '</div>';
+      var html = '<div class="' + selectedItem_class + ' col-md-3 contactSelectedItem selectedItem">' + '<div>' + selectedIcon + '<div class="contactSelectedItemDesc">' + selectedItem + '</div>' + '</div>' + '</div>';
       $('.contactSelectedItems').append(html);
       html = '<input class="selectedItem ' + selectedItem_class + '" type="hidden" value="' + selectedItem + '" name="selectedItems[]">';
       $('#contactForm').append(html);

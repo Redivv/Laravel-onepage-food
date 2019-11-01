@@ -17327,6 +17327,11 @@ html main section .productsSubTitle h3 {
   font-size: 0.8rem;
 }
 
+html main article #productsForm,
+html main section #productsForm {
+  padding: 0;
+}
+
 html main article #productsForm .product .productsIco,
 html main section #productsForm .product .productsIco {
   font-size: calc(1.275rem + 0.3vw);
@@ -17342,10 +17347,10 @@ html main section #productsForm .product .productsIco {
 html main article #productsForm .product .productsIco i,
 html main section #productsForm .product .productsIco i {
   cursor: pointer;
-  padding: 12% 0;
+  padding: 13% 0;
   border: 1px solid black;
   border-radius: 50%;
-  width: 35%;
+  width: 41%;
 }
 
 @media screen and (max-width: 610px) {
@@ -17495,6 +17500,12 @@ html main section .contactOutputBox .contactSelectedItem {
   color: white;
   padding: 2.5%;
   font-size: 0.8rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 html main article .contactOutputBox .contactSelectedItem .contactSelectedItemDesc,
@@ -17533,7 +17544,6 @@ html main section .contactFormBox form .form-group .contactBtn {
   background-color: turquoise;
   color: white;
   font-size: 0.5rem;
-  padding: 2%;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: bold;

@@ -6,7 +6,7 @@
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus fugit laboriosam ad incidunt dolorum dolorem soluta perferendis.</h3>
 </div>
 
-<form id="productsForm">
+<form class="container" id="productsForm">
     <div class="form-row text-center">
 
         <div class="product col form-group">

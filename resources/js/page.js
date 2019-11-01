@@ -57,9 +57,11 @@ function main() {
 
             $(this).addClass('active');
             let html = '<div class="'+selectedItem_class+' col-md-3 contactSelectedItem selectedItem">'+
+            '<div>'+
             selectedIcon+
             '<div class="contactSelectedItemDesc">'+
                 selectedItem+
+            '</div>'+
             '</div>'+
             '</div>';
 
