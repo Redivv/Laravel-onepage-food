@@ -16998,6 +16998,7 @@ html {
   font-size: 2vw;
   font-family: "Yanone Kaffeesatz", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 @media screen and (max-width: 810px) {
@@ -17015,7 +17016,6 @@ html {
 html body {
   background-color: rgba(64, 224, 208, 0.35);
   position: relative;
-  overflow-x: hidden;
 }
 
 html nav {
@@ -17032,6 +17032,7 @@ html nav .nav-item {
   font-size: 0.6rem;
   font-weight: bold;
   padding: 0.2rem 0.2rem;
+  letter-spacing: 2px;
 }
 
 html nav .nav-item img {
@@ -17062,7 +17063,7 @@ html nav .nav-item .mobile {
 }
 
 html nav .nav-item.active {
-  color: brown;
+  color: orangered;
 }
 
 html #header {

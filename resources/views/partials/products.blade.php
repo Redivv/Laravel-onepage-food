@@ -135,7 +135,7 @@
         <button class="productsAllBtn btn offset-sm-1 offset-md-4 mr-md-2 col-xs-6 col-sm-5 col-md-2" type="button">
             Zaznacz Wszystko
         </button>
-        <button class="productsResetBtn btn ml-md-2 col-xs-6 col-sm-5 col-md-2" type="reset">
+        <button id="contact" class="productsResetBtn btn ml-md-2 col-xs-6 col-sm-5 col-md-2" type="reset">
             Odznacz Wszystko
         </button>
     </div>

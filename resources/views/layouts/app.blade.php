@@ -35,7 +35,7 @@
                 @yield('products')
             </article>
 
-            <section id="contact">
+            <section>
                 @yield('contactMe')
             </section>
         </main>
