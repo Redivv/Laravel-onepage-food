@@ -41,7 +41,7 @@ function main() {
 
         if($(window).scrollTop() + $(window).height() <= $(document).height() - 100 && contactActive) {
             $('.nav-item').removeClass('active');
-            $('.nav-item[href="#products"]').addClass('active');
+            $('.nav-item[href="#about"]').addClass('active');
             contactActive = false;
         }
 

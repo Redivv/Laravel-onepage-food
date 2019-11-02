@@ -2,11 +2,11 @@
     <span><img src="{{asset('images/image-cap.png')}}" alt="Logo"></span>
     <div class="mobile"><img src="{{asset('images/image-cap.png')}}" alt="Logo"></div>
 </a>
-<a class="nav-item nav-link active" href="#about">
-    <span>{{__('nav.about')}}</span>
+<a class="nav-item nav-link" href="#products">
+    <span>{{__('nav.products')}}</span>
     <span class="mobile">
-        <i class="fas fa-users"></i>
-        <div>{{__('nav.about')}}</div>
+        <i class="fas fa-clipboard-list"></i>
+        <div>{{__('nav.products')}}</div>
     </span>
 </a>
 <a class="nav-item nav-link" href="#gallery">
@@ -16,11 +16,11 @@
         <div>{{__('nav.gallery')}}</div>
     </span>
 </a>
-<a class="nav-item nav-link" href="#products">
-    <span>{{__('nav.products')}}</span>
+<a class="nav-item nav-link active" href="#about">
+    <span>{{__('nav.about')}}</span>
     <span class="mobile">
-        <i class="fas fa-clipboard-list"></i>
-        <div>{{__('nav.products')}}</div>
+        <i class="fas fa-users"></i>
+        <div>{{__('nav.about')}}</div>
     </span>
 </a>
 <a class="nav-item nav-link" href="#contact">

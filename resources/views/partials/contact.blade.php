@@ -7,7 +7,7 @@
     <div class="contactOutputBox container col-sm-12 col-md-6">
 
         <header class="text-center">
-            <h3>Wybrane Elementy Oferty</h3>
+            <h3>{{__('contact.selectedItems')}}</h3>
         </header>
 
         <output class="contactSelectedItems row text-center">
@@ -18,34 +18,34 @@
     <div class="contactFormBox container col-sm-12 col-md-6">
 
         <header class="text-center">
-            <h3>Napisz do Nas</h3>
+            <h3>{{__('contact.writeToUs')}}</h3>
         </header>
 
         <form id="contactForm" action="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="name">Imię</label>
+                <label for="name">{{__('contact.formName')}}</label>
                 <input name="name" id="name" type="text" class="form-control">
             </div>
             <div class="form-group">
-                <label for="email">E-Mail</label>
+                <label for="email">{{__('contact.formMail')}}</label>
                 <input id="email" name="email" type="email" class="form-control">
             </div>
             <div class="form-group">
-                <label for="telephone">Numer Telefonu</label>
+                <label for="telephone">{{__('contact.formNumber')}}</label>
                 <input id="telephone" name="telephone" type="text" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="message">Wiadomość</label>
+                <label for="message">{{__('contact.formMessage')}}</label>
                 <input id="message" name="message" type="text" class="form-control">
             </div>
             <div class="form-group">
-                <label for="projectFile">Masz Gotowy Projekt? Wyślij go od razu</label>
+                <label for="projectFile">{{__('contact.formFile')}}</label>
                 <input id="projectFile" name="projectFile" type="file" class="form-control-file">
             </div>
 
             <div class="mt-2 form-group text-center">
                 <button type="submit" class="btn contactBtn">
-                    Wyślij
+                    {{__('contact.formSend')}}
                 </button>
             </div>
         </form>

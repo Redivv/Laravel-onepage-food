@@ -22,20 +22,20 @@
             @yield('header')
         </header>
         <main class="container-fluid pb-4">
-            
-            <article id="about" class="pt-4 mb-5">
-                @yield('aboutMe')
-            </article>
 
+            <article id="products" class="pt-4 mb-5">
+                @yield('products')
+            </article>
+        
             <section id="gallery" class="mb-5">
                 @yield('instaGallery')
             </section>
-
-            <article id="products" class="mb-5">
-                @yield('products')
+            
+            <article id="about" class="mb-5">
+                @yield('aboutMe')
             </article>
 
-            <section>
+            <section id="contact">
                 @yield('contactMe')
             </section>
         </main>
