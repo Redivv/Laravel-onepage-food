@@ -235,19 +235,33 @@ html{
                 .product{
                     .productsIco{
                         @include font-size(1.5rem);
-                        i{
+                        .productPlusIcon{
+                            cursor: pointer;
+                            @include font-size (1rem);
+                            display: block;
+                            text-align: right;
+                            @media screen and (max-width: $break1){
+                                @include font-size (0.8rem);
+                            }
+                        }
+                        .productIcon{
                             cursor: pointer;
                             padding: 13% 0;
                             border: 1px solid black;
                             border-radius:50%;
                             width: 41%;
-                            @media screen and (max-width: $break1){
+                            @media screen and (max-width: $break3){
                                 width:50%;
+                                padding: 15% 0;
+                            }
+                            @media screen and (max-width: $break1){
+                                width:70%;
+                                padding: 19% 0;
                             }
                         }
 
                         &.active{
-                            i{
+                            .productIcon{
                                 background-color: $turquoise-bg;
                                 color: $text-white;
                                 border:1px solid $turquoise-bg;
@@ -273,14 +287,26 @@ html{
                     }
                 }
                 .productsMainItem{
+                    .productPlusIcon{
+                            @include font-size (1rem);
+                            display: block;
+                            text-align: right;
+                            cursor: pointer;
+                            padding-right: 2%;
+                            @media screen and (max-width: $break1){
+                                @include font-size (0.8rem);
+                            }
+                        }
                     .productsIco{
                         cursor: pointer;
                         @include font-size(2rem);
                         background-color: $turquoise-bg;
                         color: $text-white;
                         padding: 1.5% 0;
+                        padding-bottom: 7%;
                         @media screen and (max-width: $break1){
                             padding: 1% 0;
+                            padding-bottom: 18%;
                         }
 
                         .productsDesc{

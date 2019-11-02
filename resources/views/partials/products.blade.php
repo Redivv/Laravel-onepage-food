@@ -7,14 +7,16 @@
 </div>
 
 <form class="container" id="productsForm">
+
     <div class="form-row text-center">
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-university"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-search"></i>
             </div>
             <div class="productsDesc">
-                PIP
+                Audyty
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>
@@ -23,10 +25,13 @@
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-certificate"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-sticky-note"></i>
             </div>
             <div class="productsDesc">
-                Certyfikaty
+                Etykiety
+                Alergeny
+                Wartość Odżywcza
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>
@@ -35,10 +40,13 @@
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-clipboard-check"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-ad"></i>
             </div>
             <div class="productsDesc">
-                Kontrole
+                Strona WWW
+                Grafika
+                Reklama
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>
@@ -51,7 +59,8 @@
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-utensils"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-utensils"></i>
             </div>
             <div class="productsDesc">
                 Dietetyk
@@ -63,7 +72,8 @@
 
         <div class="col productsMainItem form-group">
             <div class="productsMainItemImage productsIco">
-                <i class="fas fa-book"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-book"></i>
                 <div class="productsDesc">
                     HCCP
                 </div>
@@ -75,7 +85,8 @@
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-graduation-cap"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-graduation-cap"></i>
             </div>
             <div class="productsDesc">
                 Szkolenia
@@ -91,10 +102,11 @@
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-search"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-university"></i>
             </div>
             <div class="productsDesc">
-                Audyty
+                PIP
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>
@@ -103,12 +115,11 @@
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-sticky-note"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-certificate"></i>
             </div>
             <div class="productsDesc">
-                Etykiety
-                Alergeny
-                Wartość Odżywcza
+                Certyfikaty
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>
@@ -117,12 +128,11 @@
 
         <div class="product col form-group">
             <div class="productsIco">
-                <i class="fas fa-ad"></i>
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-clipboard-check"></i>
             </div>
             <div class="productsDesc">
-                Strona WWW
-                Grafika
-                Reklama
+                Kontrole
             </div>
             <div class="productsBtn">
                 <button class="btn" type="button">Opis</button>

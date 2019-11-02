@@ -17859,26 +17859,28 @@ function main() {
       navPresence = false;
     }
   });
-  $('.productsIco').on('click', function () {
+  $('.productsIco>.productPlusIcon').on('click', function () {
     var selectedIcon;
     var selectedItem;
 
-    if ($(this).hasClass('productsMainItemImage')) {
-      selectedIcon = '<i class="fas fa-book"></i>';
-      selectedItem = $(this).text().trim();
+    if ($(this).parent().hasClass('productsMainItemImage')) {
+      selectedIcon = 'fas fa-book';
+      selectedItem = $(this).parent().text().trim();
     } else {
-      selectedIcon = $(this).html().trim();
-      selectedItem = $(this).next().html().trim();
+      selectedIcon = $(this).next().attr('class');
+      selectedItem = $(this).parent().next().html().trim();
     }
 
     var selectedItem_class = selectedItem.replace(/\s+/g, '-').toLowerCase();
 
-    if ($(this).hasClass('active')) {
-      $(this).removeClass('active');
+    if ($(this).parent().hasClass('active')) {
+      $(this).attr('class', 'productPlusIcon fas fa-plus');
+      $(this).parent().removeClass('active');
       $('.' + selectedItem_class).remove();
     } else {
-      $(this).addClass('active');
-      var html = '<div class="' + selectedItem_class + ' col-md-3 contactSelectedItem selectedItem">' + '<div>' + selectedIcon + '<div class="contactSelectedItemDesc">' + selectedItem + '</div>' + '</div>' + '</div>';
+      $(this).parent().addClass('active');
+      $(this).attr('class', 'productPlusIcon fas fa-minus');
+      var html = '<div class="' + selectedItem_class + ' col-md-3 contactSelectedItem selectedItem">' + '<div>' + '<i class="' + selectedIcon + '"></i>' + '<div class="contactSelectedItemDesc">' + selectedItem + '</div>' + '</div>' + '</div>';
       $('.contactSelectedItems').append(html);
       html = '<input class="selectedItem ' + selectedItem_class + '" type="hidden" value="' + selectedItem + '" name="selectedItems[]">';
       $('#contactForm').append(html);
@@ -17887,26 +17889,28 @@ function main() {
   $('.productsAllBtn').on('click', function () {
     $('.productsIco').removeClass('active');
     $('.selectedItem').remove();
+    $('.productPlusIcon').attr('class', 'productPlusIcon fas fa-minus');
     $('.productsIco').addClass('active');
     var html = '';
     var html2 = '';
-    $('div.productsIco').each(function () {
-      if ($(this).hasClass('productsMainItemImage')) {
-        selectedIcon = '<i class="fas fa-book"></i>';
-        selectedItem = $(this).text().trim();
+    $('i.productIcon').each(function () {
+      if ($(this).parent().hasClass('productsMainItemImage')) {
+        selectedIcon = 'fas fa-book';
+        selectedItem = $(this).parent().text().trim();
       } else {
-        selectedIcon = $(this).html().trim();
-        selectedItem = $(this).next().html().trim();
+        selectedIcon = $(this).attr('class');
+        selectedItem = $(this).parent().next().html().trim();
       }
 
       var selectedItem_class = selectedItem.replace(/\s+/g, '-').toLowerCase();
-      html += '<div class="' + selectedItem_class + ' col-md-3 contactSelectedItem selectedItem">' + selectedIcon + '<div class="contactSelectedItemDesc">' + selectedItem + '</div>' + '</div>';
+      html += '<div class="' + selectedItem_class + ' col-md-3 contactSelectedItem selectedItem">' + '<div>' + '<i class="' + selectedIcon + '"></i>' + '<div class="contactSelectedItemDesc">' + selectedItem + '</div>' + '</div>' + '</div>';
       html2 += '<input class="selectedItem ' + selectedItem_class + '" type="hidden" value="' + selectedItem + '" name="selectedItems[]">';
     });
     $('.contactSelectedItems').append(html);
     $('#contactForm').append(html2);
   });
   $('.productsResetBtn').on('click', function () {
+    $('.productPlusIcon').attr('class', 'productPlusIcon fas fa-plus');
     $('.productsIco').removeClass('active');
     $('.selectedItem').remove();
   });
