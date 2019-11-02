@@ -7,6 +7,7 @@ function main() {
     let topofDiv = $("#header").offset().top; //gets offset of header
     var height   = $("#header").outerHeight();
     let navPresence = false;
+    let contactActive = false;
 
     if($(window).scrollTop() > (topofDiv+height) && !navPresence){
         $('#navigation').animate({
@@ -16,6 +17,7 @@ function main() {
      }
     
     $(window).scroll(function(){
+
         if($(window).scrollTop() > (topofDiv+height) && !navPresence){
            $('#navigation').animate({
               top: "+=50vh" 
@@ -30,8 +32,21 @@ function main() {
              navPresence = true;
            navPresence = false;
         }
-    });
 
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 100 && !contactActive) {
+            $('.nav-item').removeClass('active');
+            $('.nav-item[href="#contact"]').addClass('active');
+            contactActive = true;
+        }
+
+        if($(window).scrollTop() + $(window).height() <= $(document).height() - 100 && contactActive) {
+            $('.nav-item').removeClass('active');
+            $('.nav-item[href="#products"]').addClass('active');
+            contactActive = false;
+        }
+
+    });
+    
     $('.productsIco>.productPlusIcon').on('click',function(){
         let selectedIcon;
         let selectedItem;
