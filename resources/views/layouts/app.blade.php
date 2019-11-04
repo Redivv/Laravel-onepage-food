@@ -23,7 +23,7 @@
         </header>
         <main class="container-fluid pb-4">
 
-            <article id="products" class="mb-5">
+            <article id="products" class="pt-3 mb-5">
                 @yield('products')
             </article>
 
@@ -31,7 +31,7 @@
                 @yield('instaGallery')
             </section>
             
-            <article id="about" class="pt-4 mb-5">
+            <article id="about" class="mb-5">
                 @yield('aboutMe')
             </article>
 
