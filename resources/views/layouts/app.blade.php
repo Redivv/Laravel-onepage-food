@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html style="overflow-x:hidden"lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
-    <body data-spy="scroll" data-target="#navigation">
+    <body style="overflow-x:hidden" data-spy="scroll" data-target="#navigation">
         
         <nav class="nav align-items-center nav-justified pt-2 pb-2" id="navigation">
             @yield('navigation')
