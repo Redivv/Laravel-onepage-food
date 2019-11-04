@@ -15,10 +15,9 @@
                 <div class="car-detail wheel"></div>
                 <div class="car-detail wheel wheel2"></div>
             </div>
-        
-            <div class="text">
-                <span>Loading</span><span class = "dots">...</span>
-            </div>
+        </div>
+        <div class="text">
+            Jeśli tu jesteś<span class="highlight"> to znaczy, że już do Ciebie jedziemy!</span>
         </div>
     </div>
     <div class="col-12">

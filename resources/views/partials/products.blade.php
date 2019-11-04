@@ -133,7 +133,7 @@
                 </button>
             </div>
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Iure</h5>
             </div>
             <div class="modal-body">
                 <p>
