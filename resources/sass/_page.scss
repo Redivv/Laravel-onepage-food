@@ -13,6 +13,7 @@ html{
     body{
         background-color: $turquoise-body-transparent;
         position: relative;
+        padding: 0 !important;
     }
 
     nav{
@@ -350,6 +351,55 @@ html{
                     }
                 }
                 
+            }
+
+            #productModal{
+                .modal-close-button{
+                    padding-top: 2%;
+                    padding-right: 2%;
+                    button{
+                        display: flex;
+                        opacity: 1;
+                        span{
+                            @include font-size(0.7rem);
+                            color: $text-black;
+                        }
+                        &:hover{
+                            span{
+                                color:$text-orange;
+                            }
+                        }
+                    }
+                }
+                .modal-header{
+                    border: 0;
+                    padding:2%;
+                    text-align: center;
+                    h5{
+                        @include font-size(1.2rem);
+                        margin: 0 auto;
+                    }
+                }
+                .modal-body{
+                    p{
+                        @include font-size(0.8rem);
+                    }
+                }
+                .modal-footer{
+                    border:0;
+                    button{
+                        padding: 1.5% 2%;
+                        background-color: $turquoise-bg;
+                        color: $text-white;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        @include font-size(0.5rem);
+                        &:hover{
+                            background-color: $turquoise-bg-hover;
+                        }
+                    }
+                }
             }
 
             .contactOutputBox, .contactFormBox{

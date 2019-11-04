@@ -17016,6 +17016,7 @@ html {
 html body {
   background-color: rgba(64, 224, 208, 0.35);
   position: relative;
+  padding: 0 !important;
 }
 
 html nav {
@@ -17507,6 +17508,69 @@ html main article #productsForm .productsAllBtn:hover,
 html main article #productsForm .productsResetBtn:hover,
 html main section #productsForm .productsAllBtn:hover,
 html main section #productsForm .productsResetBtn:hover {
+  background-color: #22c4b4;
+}
+
+html main article #productModal .modal-close-button,
+html main section #productModal .modal-close-button {
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
+html main article #productModal .modal-close-button button,
+html main section #productModal .modal-close-button button {
+  display: -webkit-box;
+  display: flex;
+  opacity: 1;
+}
+
+html main article #productModal .modal-close-button button span,
+html main section #productModal .modal-close-button button span {
+  font-size: 0.7rem;
+  color: black;
+}
+
+html main article #productModal .modal-close-button button:hover span,
+html main section #productModal .modal-close-button button:hover span {
+  color: darkorange;
+}
+
+html main article #productModal .modal-header,
+html main section #productModal .modal-header {
+  border: 0;
+  padding: 2%;
+  text-align: center;
+}
+
+html main article #productModal .modal-header h5,
+html main section #productModal .modal-header h5 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+html main article #productModal .modal-body p,
+html main section #productModal .modal-body p {
+  font-size: 0.8rem;
+}
+
+html main article #productModal .modal-footer,
+html main section #productModal .modal-footer {
+  border: 0;
+}
+
+html main article #productModal .modal-footer button,
+html main section #productModal .modal-footer button {
+  padding: 1.5% 2%;
+  background-color: turquoise;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.5rem;
+}
+
+html main article #productModal .modal-footer button:hover,
+html main section #productModal .modal-footer button:hover {
   background-color: #22c4b4;
 }
 

@@ -16,5 +16,6 @@ return [
     'item8'        => 'Certyfikaty',
     'item9'        => 'Kontrole',
     'btnAll'       => 'Zaznacz Wszystkie',
-    'btnReset'     => 'Odznacz Wszystkie'
+    'btnReset'     => 'Odznacz Wszystkie',
+    'closeModal'   => 'Zamknij'
 ];

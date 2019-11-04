@@ -13,7 +13,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-search"></i>
+                <i class="productIcon fas fa-search" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item1')}}
@@ -23,7 +23,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-sticky-note"></i>
+                <i class="productIcon fas fa-sticky-note" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item2')}}
@@ -33,7 +33,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-ad"></i>
+                <i class="productIcon fas fa-ad" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item3')}}
@@ -47,7 +47,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-utensils"></i>
+                <i class="productIcon fas fa-utensils" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item4')}}
@@ -57,7 +57,7 @@
         <div class="col productsMainItem form-group">
             <div class="productsMainItemImage productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-book"></i>
+                <i class="productIcon fas fa-book" data-toggle="modal" data-target="#productModal"></i>
                 <div class="productsDesc">
                     {{__('products.itemMain')}}
                 </div>
@@ -67,7 +67,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-graduation-cap"></i>
+                <i class="productIcon fas fa-graduation-cap" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item6')}}
@@ -81,7 +81,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-university"></i>
+                <i class="productIcon fas fa-university" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item7')}}
@@ -91,7 +91,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-certificate"></i>
+                <i class="productIcon fas fa-certificate" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item8')}}
@@ -101,7 +101,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-clipboard-check"></i>
+                <i class="productIcon fas fa-clipboard-check" data-toggle="modal" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item9')}}
@@ -119,3 +119,27 @@
         </button>
     </div>
 </form>
+
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+            <div class="modal-close-button">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vel qui odit nulla quaerat tempore? Explicabo quo modi eum quia tempore temporibus dignissimos iusto provident, debitis recusandae. Recusandae, impedit fuga.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">{{__('products.closeModal')}}</button>
+            </div>
+      </div>
+    </div>
+  </div>
