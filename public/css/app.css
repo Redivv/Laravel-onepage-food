@@ -17363,7 +17363,7 @@ html main section #productsForm .product .productsIco .productPlusIcon {
 
 html main article #productsForm .product .productsIco .productIcon,
 html main section #productsForm .product .productsIco .productIcon {
-  cursor: pointer;
+  cursor: help;
   padding: 13% 0;
   border: 1px solid black;
   border-radius: 50%;
@@ -17486,8 +17486,10 @@ html main section #productsForm .productsMainItem .productsBtn button {
 
 html main article #productsForm .productsAllBtn,
 html main article #productsForm .productsResetBtn,
+html main article #productsForm .productsLinkBtn,
 html main section #productsForm .productsAllBtn,
-html main section #productsForm .productsResetBtn {
+html main section #productsForm .productsResetBtn,
+html main section #productsForm .productsLinkBtn {
   background-color: turquoise;
   color: white;
   font-size: 0.5rem;
@@ -17497,8 +17499,10 @@ html main section #productsForm .productsResetBtn {
 @media screen and (max-width: 767px) {
   html main article #productsForm .productsAllBtn,
   html main article #productsForm .productsResetBtn,
+  html main article #productsForm .productsLinkBtn,
   html main section #productsForm .productsAllBtn,
-  html main section #productsForm .productsResetBtn {
+  html main section #productsForm .productsResetBtn,
+  html main section #productsForm .productsLinkBtn {
     margin: auto;
     width: 40%;
   }
@@ -17506,9 +17510,27 @@ html main section #productsForm .productsResetBtn {
 
 html main article #productsForm .productsAllBtn:hover,
 html main article #productsForm .productsResetBtn:hover,
+html main article #productsForm .productsLinkBtn:hover,
 html main section #productsForm .productsAllBtn:hover,
-html main section #productsForm .productsResetBtn:hover {
+html main section #productsForm .productsResetBtn:hover,
+html main section #productsForm .productsLinkBtn:hover {
   background-color: #22c4b4;
+}
+
+html main article #productsForm .productsLinkBtn,
+html main section #productsForm .productsLinkBtn {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 610px) {
+  html main article #productsForm .productsLinkBtn,
+  html main section #productsForm .productsLinkBtn {
+    -webkit-box-flex: 0;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
 }
 
 html main article #productModal .modal-close-button,

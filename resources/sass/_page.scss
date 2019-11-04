@@ -246,7 +246,7 @@ html{
                             }
                         }
                         .productIcon{
-                            cursor: pointer;
+                            cursor: help;
                             padding: 13% 0;
                             border: 1px solid black;
                             border-radius:50%;
@@ -336,7 +336,7 @@ html{
                         }
                     }
                 }
-                .productsAllBtn, .productsResetBtn{
+                .productsAllBtn, .productsResetBtn, .productsLinkBtn{
                     background-color: $turquoise-bg;
                     color: $text-white;
                     @include font-size(0.5rem);
@@ -348,6 +348,17 @@ html{
 
                     &:hover{
                         background-color: $turquoise-bg-hover;
+                    }
+                }
+
+                .productsLinkBtn{
+                    text-transform: uppercase;
+                    @include font-size(0.7rem);
+                    margin: 0 auto;
+                    @media screen and (max-width: $break1){
+                        -webkit-box-flex: 0;
+                        flex: 0 0 66.6666666667%;
+                        max-width: 66.6666666667%;
                     }
                 }
                 

@@ -41,7 +41,7 @@
         </main>
 
         <footer class="pt-1 pb-1">
-            <section class="text-center" id="footer">
+            <section class="container-fluid text-center" id="footer">
                 @yield('footer')
             </section>
         </footer>

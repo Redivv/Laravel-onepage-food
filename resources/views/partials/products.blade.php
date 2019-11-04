@@ -111,12 +111,15 @@
     </div>
 
     <div class="row text-center">
-        <button class="productsAllBtn btn offset-sm-1 offset-md-4 mr-md-2 col-xs-6 col-sm-5 col-md-2" type="button">
+        <button class="productsAllBtn btn offset-sm-1 offset-md-4 mr-md-2 col-xs-6 col-sm-4 col-md-2" type="button">
             {{__('products.btnAll')}}
         </button>
-        <button class="productsResetBtn btn ml-md-2 col-xs-6 col-sm-5 col-md-2" type="reset">
+        <button class="productsResetBtn btn ml-md-2 col-xs-6 col-sm-4 col-md-2" type="reset">
             {{__('products.btnReset')}}
         </button>
+        <a href="#contact" class="productsLinkBtn btn mt-3 col-xs-12 col-sm-8 col-md-6" type="reset">
+                {{__('products.btnLink')}}
+        </a>
     </div>
 </form>
 

@@ -17,5 +17,6 @@ return [
     'item9'        => 'Kontrole',
     'btnAll'       => 'Zaznacz Wszystkie',
     'btnReset'     => 'Odznacz Wszystkie',
-    'closeModal'   => 'Zamknij'
+    'closeModal'   => 'Zamknij',
+    'btnLink'      => 'Zdecydowany? Napisz do nas!'
 ];
