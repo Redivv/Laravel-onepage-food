@@ -3,7 +3,9 @@
 </header>
 
 <div class="productsSubTitle mb-4">
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus fugit laboriosam ad incidunt dolorum dolorem soluta perferendis.</h3>
+    <h3>{{__('products.desc')}}<span class="highlight">{{__('products.descHighlight')}}</span></h3>
+    <div class="productsSubTitle-divider">{{__('products.divider')}}</div>
+    <h3 class="productsTelephone">{{__('products.callUs')}} <a href="tel:+48{{__('products.tel')}}">{{__('products.telFormat')}}</a></h3>
 </div>
 
 <form class="container" id="productsForm">
@@ -78,7 +80,7 @@
 
     <div class="form-row text-center">
 
-        <div class="product col form-group">
+        <div class="product col form-group mb-1">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
                 <i class="productIcon fas fa-university" data-toggle="modal" data-target="#productModal"></i>
@@ -88,7 +90,7 @@
             </div>
         </div>
 
-        <div class="product col form-group">
+        <div class="product col form-group mb-1">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
                 <i class="productIcon fas fa-certificate" data-toggle="modal" data-target="#productModal"></i>
@@ -98,7 +100,7 @@
             </div>
         </div>
 
-        <div class="product col form-group">
+        <div class="product col form-group mb-1">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
                 <i class="productIcon fas fa-clipboard-check" data-toggle="modal" data-target="#productModal"></i>
@@ -110,6 +112,10 @@
 
     </div>
 
+    <div class="productsHelp text-muted text-center mb-4">
+        {{__('products.help')}}
+    </div>
+
     <div class="row text-center">
         <button class="productsAllBtn btn offset-sm-1 offset-md-4 mr-md-2 col-xs-6 col-sm-4 col-md-2" type="button">
             {{__('products.btnAll')}}
@@ -118,7 +124,7 @@
             {{__('products.btnReset')}}
         </button>
         <a href="#contact" class="productsLinkBtn btn mt-3 col-xs-12 col-sm-8 col-md-6" type="reset">
-                {{__('products.btnLink')}}
+            {{__('products.btnLink')}}
         </a>
     </div>
 </form>
