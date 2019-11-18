@@ -101,7 +101,6 @@ $(document).ready(function () {
   });
   main();
   smoothScroll();
-  ajax;
 });
 
 function main() {
