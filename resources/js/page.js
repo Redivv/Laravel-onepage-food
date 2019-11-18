@@ -76,8 +76,7 @@ function main() {
         
         request.done(function(response){
             if (response.status === 'success') {
-                alert('benizd');
-                modal.find('.modal-body').html('<p>Beniz</p>');
+                modal.find('.modal-body').html(response.html);
             }
         });
         

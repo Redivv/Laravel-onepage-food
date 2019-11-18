@@ -23,7 +23,8 @@ class PageController extends Controller
             ];
 
             if (in_array($product,$allProducts)) {
-                return response()->json(['status' => 'success'], 200);
+                $html = view('partials.products.'.$product)->render();
+                return response()->json(['status' => 'success','html' => $html], 200);
             }else{
                 return response()->json(['status' => 'error','message' => 'Invalid Data'], 400);
             }
