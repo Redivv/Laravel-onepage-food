@@ -17483,7 +17483,6 @@ html main section #productsForm .productsMainItem .productPlusIcon {
 
 html main article #productsForm .productsMainItem .productsIco,
 html main section #productsForm .productsMainItem .productsIco {
-  cursor: pointer;
   font-size: calc(1.325rem + 0.9vw);
   background-color: #3cdccc;
   color: white;
@@ -17504,6 +17503,11 @@ html main section #productsForm .productsMainItem .productsIco {
     padding: 1% 0;
     padding-bottom: 18%;
   }
+}
+
+html main article #productsForm .productsMainItem .productsIco .productIcon,
+html main section #productsForm .productsMainItem .productsIco .productIcon {
+  cursor: help;
 }
 
 html main article #productsForm .productsMainItem .productsIco .productsDesc,

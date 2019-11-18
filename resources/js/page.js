@@ -1,6 +1,12 @@
 $(document).ready(function(){
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
     main();
     smoothScroll();
+    ajax
 });
 
 function main() {
@@ -46,6 +52,41 @@ function main() {
         }
 
     });
+
+    $('#productModal').on('show.bs.modal',function(event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        let title = button.data('product');
+        let htmlSpinner = '<div class="spinnerBox text-center">'+
+            '<div class="spinner-border" role="status">'+
+                '<span class="sr-only">Loading...</span>'+
+            '</div>'+
+       '</div>';
+
+       let modal = $(this);
+
+        modal.find('.modal-title').html(title);
+        modal.find('.modal-body').html(htmlSpinner);
+        let url = baseUrl+"/getProductDesc";
+
+        var request = $.ajax({
+            method : 'get',
+            url: url,
+            data: {data:title}
+        });
+        
+        
+        request.done(function(response){
+            if (response.status === 'success') {
+                alert('benizd');
+                modal.find('.modal-body').html('<p>Beniz</p>');
+            }
+        });
+        
+        
+        request.fail(function (xhr){
+            alert(xhr.responseJSON.message);
+        });
+    })
     
     $('.productsIco>.productPlusIcon').on('click',function(){
         let selectedIcon;

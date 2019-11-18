@@ -1,18 +1,12 @@
 <?php
 
 return [
-    'title'        =>  'Oferta',
-    'item1'        =>  'Audyty',
-    'item2'        =>  'Etykiety
-                        Alergeny
-                        Wartość Odżywcza',
-    'item3'        =>  'Strona WWW
-                        Grafika
-                        Reklama',
+    'title'        => 'Oferta',
+    'item1'        => 'Audyty',
+    'item2'        => 'Etykiety Alergeny Wartość Odżywcza',
+    'item3'        => 'Strona WWW Grafika Reklama',
     'item4'        => 'Dietetyk',
-    'itemMain'     => 'HCCP
-                       GHP
-                       GMP',
+    'itemMain'     => 'HCCP GHP GMP',
     'item6'        => 'Szkolenia',
     'item7'        => 'PIP
                        Kontrole',

@@ -332,7 +332,6 @@ html{
                             }
                         }
                     .productsIco{
-                        cursor: pointer;
                         @include font-size(2rem);
                         background-color: $turquoise-bg;
                         color: $text-white;
@@ -341,6 +340,9 @@ html{
                         @media screen and (max-width: $break1){
                             padding: 1% 0;
                             padding-bottom: 18%;
+                        }
+                        .productIcon{
+                            cursor: help;
                         }
 
                         .productsDesc{

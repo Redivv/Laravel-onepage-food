@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'PageController@index');
+
+Route::get('/getProductDesc', 'PageController@productDesc')->name('ajaxProductDesc');

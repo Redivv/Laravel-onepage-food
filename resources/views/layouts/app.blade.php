@@ -27,9 +27,9 @@
                 @yield('products')
             </article>
 
-            <section id="gallery" class="mb-5">
+            {{-- <section id="gallery" class="mb-5">
                 @yield('instaGallery')
-            </section>
+            </section> --}}
             
             <article id="about" class="mb-5">
                 @yield('aboutMe')
@@ -47,8 +47,11 @@
         </footer>
 
         <!-- Scripts -->
-        <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
+        <script>
+            var baseUrl = "{{url('/')}}";
+        </script>
+        <script src="{{ asset('js/page.js') }}"></script>
 
     </body>
 </html>
