@@ -10,3 +10,5 @@ try {
 
     require('bootstrap');
 } catch (e) {}
+
+import "lightbox2";
