@@ -17830,6 +17830,11 @@ html main section .productsHelp {
   font-size: 0.4rem;
 }
 
+html main article #productModal .modal-dialog,
+html main section #productModal .modal-dialog {
+  min-width: 80vw;
+}
+
 html main article #productModal .modal-close-button,
 html main section #productModal .modal-close-button {
   padding-top: 2%;

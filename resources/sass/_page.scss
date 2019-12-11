@@ -427,6 +427,9 @@ html{
             }
 
             #productModal{
+                .modal-dialog{
+                    min-width: 80vw;
+                }
                 .modal-close-button{
                     padding-top: 2%;
                     padding-right: 2%;
