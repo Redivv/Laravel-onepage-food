@@ -356,8 +356,8 @@ html{
                         @include font-size(2rem);
                         background-color: $turquoise-bg;
                         color: $text-white;
-                        padding: 1.5% 0;
-                        padding-bottom: 7%;
+                        padding: 0 0;
+                        padding-bottom: 3%;
                         @media screen and (max-width: $break1){
                             padding: 1% 0;
                             padding-bottom: 18%;
@@ -427,6 +427,11 @@ html{
             }
 
             #productModal{
+                ul,ol{
+                    li{
+                        @include font-size(0.9rem);
+                    }
+                }
                 .modal-dialog{
                     min-width: 80vw;
                 }

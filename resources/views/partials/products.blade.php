@@ -9,6 +9,18 @@
 </div>
 
 <form class="container" id="productsForm">
+    
+    <div class="form-row text-center">
+        <div class="col productsMainItem form-group">
+            <div class="productsMainItemImage productsIco">
+                <i class="productPlusIcon fas fa-plus"></i>
+                <i class="productIcon fas fa-book" data-toggle="modal" data-product="{{__('products.itemMain')}}" data-target="#productModal"></i>
+                <div class="productsDesc">
+                    {{__('products.itemMain')}}
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="form-row text-center">
 
@@ -56,13 +68,13 @@
             </div>
         </div>
 
-        <div class="col productsMainItem form-group">
-            <div class="productsMainItemImage productsIco">
+        <div class="product col form-group">
+            <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-book" data-toggle="modal" data-product="{{__('products.itemMain')}}" data-target="#productModal"></i>
-                <div class="productsDesc">
-                    {{__('products.itemMain')}}
-                </div>
+                <i class="productIcon fas fa-graduation-cap" data-toggle="modal" data-product="{{__('products.item10')}}" data-target="#productModal"></i>
+            </div>
+            <div class="productsDesc">
+                {{__('products.item10')}}
             </div>
         </div>
 

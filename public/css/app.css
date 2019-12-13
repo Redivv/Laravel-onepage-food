@@ -17719,8 +17719,8 @@ html main section #productsForm .productsMainItem .productsIco {
   font-size: calc(1.325rem + 0.9vw);
   background-color: #3cdccc;
   color: white;
-  padding: 1.5% 0;
-  padding-bottom: 7%;
+  padding: 0 0;
+  padding-bottom: 3%;
 }
 
 @media (min-width: 1200px) {
@@ -17828,6 +17828,13 @@ html main section #productsForm .productsLinkBtn {
 html main article .productsHelp,
 html main section .productsHelp {
   font-size: 0.4rem;
+}
+
+html main article #productModal ul li,
+html main article #productModal ol li,
+html main section #productModal ul li,
+html main section #productModal ol li {
+  font-size: 0.9rem;
 }
 
 html main article #productModal .modal-dialog,

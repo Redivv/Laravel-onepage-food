@@ -12,6 +12,7 @@ return [
                        Kontrole',
     'item8'        => 'Certyfikaty',
     'item9'        => 'Sanepid',
+    'item10'       => 'Projekty',
     'btnAll'       => 'Zaznacz Wszystkie',
     'btnReset'     => 'Odznacz Wszystkie',
     'closeModal'   => 'Zamknij',

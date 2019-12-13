@@ -19,7 +19,7 @@ class PageController extends Controller
 
             $allProducts = [
                 'audyty','etykiety_alergeny_wartosc_odzywcza','strona_www_grafika_reklama','dietetyk','hccp_ghp_gmp',
-                'szkolenia','pip_kontrole','certyfikaty','sanepid'
+                'szkolenia','pip_kontrole','certyfikaty','sanepid', 'projekty'
             ];
 
             if (in_array($product,$allProducts)) {
