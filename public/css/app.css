@@ -17235,7 +17235,8 @@ html nav .nav-item {
 }
 
 html nav .nav-item img {
-  width: 20%;
+  width: 6rem;
+  height: 2rem;
 }
 
 html nav .nav-item .mobile {
@@ -17253,7 +17254,8 @@ html nav .nav-item .mobile {
   }
 
   html nav .nav-item .mobile img {
-    width: 60%;
+    width: 3.5rem;
+    height: 1.5rem;
   }
 
   html nav .nav-item .mobile div {
@@ -17700,6 +17702,7 @@ html main section #productsForm .product .productsBtn button {
 
 html main article #productsForm .productsMainItem .productPlusIcon,
 html main section #productsForm .productsMainItem .productPlusIcon {
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   display: block;
   text-align: right;
@@ -17844,8 +17847,7 @@ html main section #productModal .modal-dialog {
 
 html main article #productModal .modal-close-button,
 html main section #productModal .modal-close-button {
-  padding-top: 2%;
-  padding-right: 2%;
+  padding: 0.5rem 1rem;
 }
 
 html main article #productModal .modal-close-button button,
@@ -17857,7 +17859,7 @@ html main section #productModal .modal-close-button button {
 
 html main article #productModal .modal-close-button button span,
 html main section #productModal .modal-close-button button span {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: black;
 }
 
@@ -17869,7 +17871,7 @@ html main section #productModal .modal-close-button button:hover span {
 html main article #productModal .modal-header,
 html main section #productModal .modal-header {
   border: 0;
-  padding: 2%;
+  padding: 0;
   text-align: center;
 }
 
@@ -17877,6 +17879,11 @@ html main article #productModal .modal-header h5,
 html main section #productModal .modal-header h5 {
   font-size: 1.2rem;
   margin: 0 auto;
+}
+
+html main article #productModal .modal-body,
+html main section #productModal .modal-body {
+  padding: 0.5rem 1rem;
 }
 
 html main article #productModal .modal-body p,
@@ -17887,11 +17894,12 @@ html main section #productModal .modal-body p {
 html main article #productModal .modal-footer,
 html main section #productModal .modal-footer {
   border: 0;
+  padding: 0.5rem;
 }
 
 html main article #productModal .modal-footer button,
 html main section #productModal .modal-footer button {
-  padding: 1.5% 2%;
+  padding: 1% 1.5%;
   background-color: #3cdccc;
   color: white;
   text-transform: uppercase;
