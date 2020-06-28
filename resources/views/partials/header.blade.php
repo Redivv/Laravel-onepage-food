@@ -15,9 +15,6 @@
                 <a href="#about" class="p-3"><h3>{{__('nav.about')}}</h3></a>
             </div>
             <div class="col">
-                <a href="#gallery" class="p-3"><h3>{{__('nav.gallery')}}</h3></a>
-            </div>
-            <div class="col">
                 <a href="#contact" class="p-3"><h3>{{__('nav.contact')}}</h3></a>
             </div>
         </div>

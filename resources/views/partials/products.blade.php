@@ -71,7 +71,7 @@
         <div class="product col form-group">
             <div class="productsIco">
                 <i class="productPlusIcon fas fa-plus"></i>
-                <i class="productIcon fas fa-graduation-cap" data-toggle="modal" data-product="{{__('products.item10')}}" data-target="#productModal"></i>
+                <i class="productIcon fas fa-pencil-ruler" data-toggle="modal" data-product="{{__('products.item10')}}" data-target="#productModal"></i>
             </div>
             <div class="productsDesc">
                 {{__('products.item10')}}

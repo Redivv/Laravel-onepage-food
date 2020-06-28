@@ -137,7 +137,7 @@ html{
                             @include font-size(0.75rem);
                             font-weight: bold;
                             @media screen and (max-width: $break1) {
-                                @include font-size(0.3rem);
+                                @include font-size(0.55rem);
                             }
                             text-transform: uppercase;
                         }
@@ -217,7 +217,7 @@ html{
                 letter-spacing: 2px;
                 @include font-size(0.7rem);
                 @media screen and (max-width: $break1){
-                    @include font-size(0.5rem);
+                    @include font-size(0.6rem);
                 }
                 span.highlight{
                     font-weight: bold;
@@ -400,7 +400,7 @@ html{
                     background-color: $turquoise-bg;
                     letter-spacing: 2px;
                     color: $text-white;
-                    @include font-size(0.5rem);
+                    @include font-size(0.55rem);
                     font-weight: bold;
                     @media screen and (max-width: $break3){
                         margin: auto;
@@ -426,7 +426,7 @@ html{
             }
 
             .productsHelp{
-                @include font-size(0.4rem);
+                @include font-size(0.5rem);
             }
 
             #productModal{
