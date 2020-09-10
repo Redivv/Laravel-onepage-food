@@ -1,1 +1,1 @@
-<p>Pyp</p>
+<p>Jesteśmy wykwalifikowani w tworzeniu dokumentacji zgodnej z zaleceniami Państwowej Inspekcji Sanitarnej. Będziemy godnie reprezentować Twoją firmę i gwarantujemy bezproblemowe, pomyślne przejście kontroli.</p>

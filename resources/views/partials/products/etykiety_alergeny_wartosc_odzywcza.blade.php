@@ -1,1 +1,2 @@
-<p>długie to to</p>
+<p>Produkujesz własne wyroby, ale nie wiesz jak je znakować? We współpracy z nami stworzysz etykiety zgodne z przepisami prawa. Właściwie oznakujemy alergeny i wartości odżywcze 
+w Twoich produktach.</p>

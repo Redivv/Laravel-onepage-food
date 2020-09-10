@@ -1,1 +1,2 @@
-<p>Szkolenia</p>
+<p>Przeszkolimy Twój personel z zakresu Dobrych Praktyk Higienicznych oraz Produkcyjnych, 
+a także systemu HACCP. Nasze szkolenia dedykujemy zakładom gastronomicznym. Przeprowadzić możemy je zarówno na terenie placówki jak i w siedzibie firmy HaHaHACCP</p>

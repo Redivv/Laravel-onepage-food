@@ -1,1 +1,1 @@
-<p>Szanepid</p>
+<p>Prawie niemożliwe załatwiamy od ręki, a cuda do 7 dni. Na współpracy z tą placówką znamy się jak mało kto. Ściągniemy Ci stres z barków i pomożemy wszystko załatwić.</p>

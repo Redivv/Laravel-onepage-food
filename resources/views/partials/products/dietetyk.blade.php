@@ -1,1 +1,1 @@
-<p>Dietytyk</p>
+<p>Dostosowujemy jadłospisy dla jednostek oświaty zgodnie z Rozporządzeniem Ministra Zdrowia. Diety układane są przez certyfikowanych specjalistów, oparte na recepturach własnych lub ułożone zgodnie ze specjalnymi życzeniami placówki.</p>
