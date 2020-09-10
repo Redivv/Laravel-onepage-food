@@ -558,6 +558,9 @@ html{
                         text-transform: uppercase;
                         font-weight: bold;
                     }
+                    @media screen and (max-width: $break3){
+                        margin-right: unset;
+                    }
                 }
             }
                 
